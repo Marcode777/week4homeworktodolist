@@ -5,5 +5,5 @@ $(".deleteButton").click( function(){
 });
 
 $(document).ready(function () {
-  $()
+  $(".row")
 })
