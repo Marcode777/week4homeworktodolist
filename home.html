@@ -2,39 +2,52 @@
 <html>
 <head>
   <title>Week4Homework:ToDoList</title>
-  <h1>Week4HomeworkToDoList</h1>
+  <h1>Week4Homework:ToDoList</h1>
+  <p>Click checkbox if done, click "done" button to erase from list.</p>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="week4hw.css">
 
 </head>
 <body>
-<table class="table table-responsive">
-  <thead>
-    <tr>
-      <th>Task</th>
-      <th>Complete By</th>
-      <th>Complete?</th>
-    </tr>
-    <tr>
-      <td>Eat Breakfast</td>
-      <td>9am</td>
-      <td><button class="deleteButton" class="btn btn-danger">done!</button></td>
-    </tr>
-     <tr>
-      <td>Eat Lunch</td>
-      <td>12pm</td>
-      <td><button class="deleteButton" class="btn btn-danger">done!</button></td>
-    </tr>
-     <tr>
-      <td>Eat Dinner</td>
-      <td>6pm</td>
-      <td><button class="deleteButton" class="btn btn-danger">done!</button></td>
-    </tr>
-  </thead>
-</table>
-
+<div class="container"> 
+  <table class="table table-responsive">
+    <thead>
+      <tr>
+        <th>Check box if complete</th>
+        <th>Task</th>
+        <th>Complete By</th>
+      </tr>
+      <tr>
+         <td class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+            <input type="checkbox"/>
+         </td>
+         <td class="col-xs-10 col-sm-9 col-md-9 col-lg-9">Eat Breakfast</td>
+         <td> 9am</td>
+         <td><button class="deleteButton" class="btn btn-danger">done!</button></td>
+      </tr>
+      <tr>
+          <td class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+             <input type="checkbox"/>
+          </td>
+          <td class="col-xs-10 col-sm-9 col-md-9 col-lg-9">Eat Lunch</td>
+          <td>12pm</td>
+          <td><button class="deleteButton" class="btn btn-danger">done!</button></td>
+      </tr>
+       <tr>
+          <td class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+             <input type="checkbox"/>
+          </td>
+          <td class="col-xs-10 col-sm-9 col-md-9 col-lg-9">Dinner</td>
+          <td>12pm</td>
+          <td><button class="deleteButton" class="btn btn-danger">done!</button></td>
+      </tr>
+    </thead>
+  </table>
+</div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="js/week4.js"></script>
+<p>By Marco Sebello</p>
 
 </body>
 </html>
