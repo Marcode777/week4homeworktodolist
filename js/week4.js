@@ -2,8 +2,7 @@ $(document).ready(function () {
 $(".deleteButton").click( function(){
   $(this).parents("tr").remove();
 });
+$(".check").on('click', function(){
+  $(this).parents("td").strike()
 });
-
-$(document).ready(function () {
-  $(".row")
-})
+});
