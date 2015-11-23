@@ -3,6 +3,6 @@ $(".deleteButton").click( function(){
   $(this).parents("tr").remove();
 });
 $(".check").on('click', function(){
-  $(this).parents("td").strike()
+  $(this).parents("tr").wrap("<strike>");
 });
 });
