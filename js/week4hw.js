@@ -28,10 +28,7 @@ $(document).ready(function() {
   });
 
   $(".btn-warning").on("click", function(){
-    var sure = confirm("Are you sure? Once the data is gone you can't get it back!");
-    if (sure === false){
-      return;
-    }
-    $("td").remove();
+    
+    $("td").remove()
   });
 });
