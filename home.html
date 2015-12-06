@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Week4Homework:ToDoList</title>
-  <h1>Week4Homework:ToDoList</h1>
-  <p>Click checkbox if done, click "done" button to erase from list.</p>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <title>Week4HomeworkToDoList</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/united/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="week4hw.css">
-
 </head>
 <body>
-<div class="container"> 
-  <table class="table table-responsive">
-    <thead>
-      <tr>
-        <th>Check box if complete</th>
-        <th>Task</th>
-        <th>Complete By</th>
-    </thead>
-    <tbody>
-      </tr>
-      <tr>
-         <td class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
-            <input class="check" type="checkbox"/>
-         </td>
-         <td class="col-xs-10 col-sm-9 col-md-9 col-lg-9">Eat Breakfast</td>
-         <td>9am</td>
-         <td><button class="deleteButton" class="btn btn-danger">done!</button></td>
-      </tr>
-      <tr>
-          <td class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
-             <input class="check" type="checkbox"/>
-          </td>
-          <td class="col-xs-10 col-sm-9 col-md-9 col-lg-9">Eat Lunch</td>
-          <td>12pm</td>
-          <td><button class="deleteButton" class="btn btn-danger">done!</button></td>
-      </tr>
-      <tr>
-          <td class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
-             <input class="check" type="checkbox"/>
-          </td>
-          <td class="col-xs-10 col-sm-9 col-md-9 col-lg-9">Dinner</td>
-          <td>12pm</td>
-          <td><button class="deleteButton" class="btn btn-danger">done!</button></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="js/week4.js"></script>
-
-<p>By Marco Sebello</p>
+  <div class="jumbotron">
+    <h1> To Do List</h1>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid col-xs-12 col-md-8">
+      <table class="table class table-bordered">
+        <thead>
+          <tr>
+            <th class="col-xs-6">Task</th>
+            <th class="col-xs-3">Check </th>
+            <th class="col-xs-3">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-xs-6">1st list item goes here</td>
+            <td class="col-xs-3"><input type="checkbox" value=""></td>
+            <td class="col-xs-3"><button type="button" class="btn btn-default">Delete</button>
+          </tr>
+          <tr>
+            <td class="col-xs-6">2nd list item goes here</td>
+            <td class="col-xs-3"><input type="checkbox" value=""></td>
+            <td class="col-xs-3"><button type="button" class="btn btn-default">Delete</button>
+          </tr>
+          <tr>
+            <td class="col-xs-6">3rd list item goes here, etc.</td>
+            <td class="col-xs-3"><input type="checkbox" value=""></td>
+            <td class="col-xs-3"><button type="button" class="btn btn-default">Delete</button>
+          </tr>
+        </tbody>
+      </table>
+      <!--  <button class="btn btn-warning btn-block">Clear List</button>  -->
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <form>
+        <input type="text" class="form-control" id="formtext" placeholder="Add to List"> 
+        <button class="btn btn-success btn-block">+</button>
+      </form>
+      <div>
+       <button class="btn btn-warning btn-block">Clear List</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/week4hw.js"></script>
 </body>
 </html>
